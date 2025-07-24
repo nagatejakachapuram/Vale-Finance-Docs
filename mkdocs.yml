@@ -1,0 +1,43 @@
+site_name: Vale-Fi Documentation
+site_url: https://docs.valefinancex.com/
+site_description: Comprehensive documentation for Vale-Fi autonomous payment and treasury management platform.
+
+# Theme configuration (highly recommended for a professional look)
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - search.highlight
+    - search.suggest
+    - toc.integrate
+  palette:
+    - scheme: default # Light mode
+      primary: blue
+      accent: teal
+      toggle:
+        icon: material/brightness-4 # Light mode icon
+        name: Switch to dark mode
+    - scheme: slate # Dark mode
+      primary: blue
+      accent: teal
+      toggle:
+        icon: material/brightness-7 # Dark mode icon
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Introduction: getting_started/introduction.md
+      - Navigation: getting_started/navigation.md
+  - Dashboard: dashboard.md
+  - Payments: payments.md
+  - Analytics: analytics.md
+  - Treasury:
+      - Overview: treasury/overview.md
+      - Agents: treasury/agents.md
+      - Strategies: treasury/strategies.md
+  - Agents:
+      - Templates: agents/templates.md
+      - Active Agents: agents/active_agents.md
+  - Settings: settings.md
